@@ -1,0 +1,14 @@
+name: Build
+run-name: master-build-${{ github.run_number }}
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    uses: ./.github/workflows/wf-build.yml
+    with:
+      application: ${{ vars.APPLICATION }}
+      push-image: true
