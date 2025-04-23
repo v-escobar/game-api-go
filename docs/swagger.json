@@ -1,0 +1,24 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "This is a simple game API.",
+        "title": "Game API",
+        "contact": {},
+        "version": "0.1"
+    },
+    "paths": {
+        "/games": {
+            "post": {
+                "description": "Creates a new game",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Creates a new game",
+                "responses": {}
+            }
+        }
+    }
+}

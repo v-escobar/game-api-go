@@ -1,0 +1,19 @@
+all: false
+dir: '{{.InterfaceDir}}/mocks'
+filename: mocks.go
+force-file-write: true
+formatter: goimports
+log-level: info
+structname: '{{.Mock}}{{.InterfaceName}}'
+pkgname: '{{.SrcPackageName}}'
+recursive: false
+require-template-schema-exists: true
+template: testify
+template-schema: '{{.Template}}.schema.json'
+packages:
+  github.com/v-escobar/game-api-go/internal/domain/game:
+    config:
+      all: true
+  github.com/v-escobar/game-api-go/internal/application:
+      config:
+        all: true

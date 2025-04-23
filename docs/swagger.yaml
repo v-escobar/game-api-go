@@ -1,0 +1,16 @@
+info:
+  contact: {}
+  description: This is a simple game API.
+  title: Game API
+  version: "0.1"
+paths:
+  /games:
+    post:
+      consumes:
+      - application/json
+      description: Creates a new game
+      produces:
+      - application/json
+      responses: {}
+      summary: Creates a new game
+swagger: "2.0"

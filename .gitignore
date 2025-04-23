@@ -1,0 +1,7 @@
+*.exe
+.idea
+main
+config.yaml
+cover.*
+coverage.txt
+.vscode
