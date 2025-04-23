@@ -8,6 +8,9 @@ on:
 
 jobs:
   build:
+    secrets: inherit
+    permissions:
+      packages: write
     uses: ./.github/workflows/wf-build.yml
     with:
       application: ${{ vars.APPLICATION }}
