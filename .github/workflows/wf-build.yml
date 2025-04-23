@@ -34,4 +34,4 @@ jobs:
         with:
           context: .
           push: ${{ inputs.push-image }}
-          tags: ghcr.io/vistiyos/game-api-go/${{ inputs.application }}:latest
+          tags: ghcr.io/v-escobar/game-api-go/${{ inputs.application }}:latest
